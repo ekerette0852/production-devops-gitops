@@ -14,9 +14,12 @@ spec:
       labels:
         app: production-web
     spec:
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
         - name: nginx
-          image: ghcr.io/ekerette0852/production-devops-platform:3a720f3
+        - name: production-web
+          image: ghcr.io/ekerette0852/production-devops-platform:f7949a7
           ports:
             - containerPort: 80
           resources:
