@@ -17,7 +17,6 @@ spec:
       imagePullSecrets:
         - name: ghcr-secret
       containers:
-        - name: nginx
         - name: production-web
           image: ghcr.io/ekerette0852/production-devops-platform:f7949a7
           ports:
