@@ -18,7 +18,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: production-web
-          image: ghcr.io/ekerette0852/production-devops-platform:f7949a7
+          image: ghcr.io/ekerette0852/production-devops-platform:3a720f3
           ports:
             - containerPort: 80
           resources:
