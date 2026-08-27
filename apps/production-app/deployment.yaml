@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.30.4
+          image: ghcr.io/ekerette0852/production-devops-platform:3a720f3
           ports:
             - containerPort: 80
           resources:
