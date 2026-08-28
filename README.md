@@ -29,6 +29,27 @@ GitOps Repository
    /      \
 Staging  Production
 
+```mermaid
+flowchart TD
+    A[Developer] --> B[GitHub Application Repository]
+    B --> C[Jenkins CI]
+
+    C --> D[Build Container Image]
+    D --> E[GitHub Container Registry - GHCR]
+
+    C --> F[GitOps Repository]
+    F --> G[Argo CD]
+
+    G --> H[Staging Namespace]
+    G --> I[Production Namespace]
+
+    H --> J[Kubernetes Cluster]
+    I --> J
+
+    E --> H
+    E --> I
+```
+
 ## Technology Stack
 
 - Linux / Ubuntu Server
