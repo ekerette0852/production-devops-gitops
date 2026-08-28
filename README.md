@@ -7,28 +7,6 @@ Argo CD, and Kubernetes.
 
 ## Architecture
 
-Application Code
-      |
-      v
-   Jenkins
-      |
-      v
-Docker Build
-      |
-      v
-GitHub Container Registry (GHCR)
-      |
-      v
-GitOps Repository
-      |
-      v
-    Argo CD
-      |
-      v
-  Kubernetes
-   /      \
-Staging  Production
-
 ```mermaid
 flowchart TD
     A[Developer] --> B[GitHub Application Repository]
