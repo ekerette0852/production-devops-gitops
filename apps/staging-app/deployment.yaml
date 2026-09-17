@@ -18,7 +18,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: staging-web
-          image: ghcr.io/ekerette0852/production-devops-platform:cfe57f4
+          image: ghcr.io/ekerette0852/production-devops-platform:0267920
           ports:
             - containerPort: 80
           resources:
